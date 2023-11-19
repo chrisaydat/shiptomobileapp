@@ -10,3 +10,5 @@ export '/pages/browseshipments/browseshipments_widget.dart'
 export '/pages/messages/messages_widget.dart' show MessagesWidget;
 export '/pages/profilesettings/profilesettings_widget.dart'
     show ProfilesettingsWidget;
+export '/pages/createshipment/createshipment_widget.dart'
+    show CreateshipmentWidget;

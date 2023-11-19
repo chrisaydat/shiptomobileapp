@@ -124,6 +124,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => params.isEmpty
               ? const NavBarPage(initialPage: 'profilesettings')
               : const ProfilesettingsWidget(),
+        ),
+        FFRoute(
+          name: 'createshipment',
+          path: '/createshipment',
+          builder: (context, params) => const CreateshipmentWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
