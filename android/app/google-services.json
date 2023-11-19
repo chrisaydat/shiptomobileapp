@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "4774313612",
+    "project_id": "shiptomobileapp",
+    "storage_bucket": "shiptomobileapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:4774313612:android:734183531f5538ffad45a9",
+        "android_client_info": {
+          "package_name": "org.aydat.shiptomobileapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiTyN3mjEENaQhGd2E2Tby3Zxb_tanflQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
