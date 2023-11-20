@@ -459,34 +459,56 @@ class _CreateaccountpageWidgetState extends State<CreateaccountpageWidget> {
                                 ),
 
                                 // You will have to add an action on this rich text to go to your login page.
-                                Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
-                                      0.0, 12.0, 0.0, 12.0),
-                                  child: RichText(
-                                    textScaleFactor:
-                                        MediaQuery.of(context).textScaleFactor,
-                                    text: TextSpan(
-                                      children: [
-                                        const TextSpan(
-                                          text: 'Already have an account? ',
-                                          style: TextStyle(),
-                                        ),
-                                        TextSpan(
-                                          text: 'Sign In here',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyMedium
-                                              .override(
-                                                fontFamily: 'Manrope',
-                                                color:
-                                                    FlutterFlowTheme.of(context)
+                                Align(
+                                  alignment: const AlignmentDirectional(0.00, 0.00),
+                                  child: Padding(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 12.0, 0.0, 12.0),
+                                    child: InkWell(
+                                      splashColor: Colors.transparent,
+                                      focusColor: Colors.transparent,
+                                      hoverColor: Colors.transparent,
+                                      highlightColor: Colors.transparent,
+                                      onTap: () async {
+                                        context.pushNamed(
+                                          'loginpage',
+                                          extra: <String, dynamic>{
+                                            kTransitionInfoKey: const TransitionInfo(
+                                              hasTransition: true,
+                                              transitionType: PageTransitionType
+                                                  .leftToRight,
+                                            ),
+                                          },
+                                        );
+                                      },
+                                      child: RichText(
+                                        textScaleFactor: MediaQuery.of(context)
+                                            .textScaleFactor,
+                                        text: TextSpan(
+                                          children: [
+                                            const TextSpan(
+                                              text: 'Already have an account? ',
+                                              style: TextStyle(),
+                                            ),
+                                            TextSpan(
+                                              text: 'Sign In here',
+                                              style: FlutterFlowTheme.of(
+                                                      context)
+                                                  .bodyMedium
+                                                  .override(
+                                                    fontFamily: 'Manrope',
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
                                                         .primary,
-                                                fontSize: 16.0,
-                                                fontWeight: FontWeight.w600,
-                                              ),
-                                        )
-                                      ],
-                                      style: FlutterFlowTheme.of(context)
-                                          .labelLarge,
+                                                    fontSize: 16.0,
+                                                    fontWeight: FontWeight.w600,
+                                                  ),
+                                            )
+                                          ],
+                                          style: FlutterFlowTheme.of(context)
+                                              .labelLarge,
+                                        ),
+                                      ),
                                     ),
                                   ),
                                 ),
